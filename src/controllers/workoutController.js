@@ -53,7 +53,7 @@ const deleteOneWorkout = (req, res) => {
         return;
     }
     workoutService.deleteOneWorkout(workoutId);
-    es.status(204).send({ status: "OK" });
+    res.status(204).send({ status: "OK" });
 }
 
 module.exports = {
